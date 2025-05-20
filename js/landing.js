@@ -24,6 +24,31 @@ document.addEventListener('DOMContentLoaded', function() {
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     return emailRegex.test(email);
   }
+
+      // Seleciona elementos
+  const thumb = document.getElementById('thumb');
+  const lightbox = document.getElementById('lightbox');
+  const fullImage = document.getElementById('full-image');
+  const fechar = document.querySelector('.fechar');
+
+  // Ao clicar na miniatura, abre o lightbox
+  thumb.addEventListener('click', () => {
+    fullImage.src = thumb.src.replace('-pequena', '-grande'); 
+    // Exemplo: troca nome do arquivo para versão maior
+    lightbox.style.display = 'flex';
+  });
+
+  // Ao clicar no "X", fecha o lightbox
+  fechar.addEventListener('click', () => {
+    lightbox.style.display = 'none';
+  });
+
+  // Fechar clicando fora da imagem
+  lightbox.addEventListener('click', e => {
+    if (e.target === lightbox) {
+      lightbox.style.display = 'none';
+    }
+  });
   
   // Evento para validação em tempo real no campo de nome
   nameInput.addEventListener('input', function() {
