@@ -49,6 +49,13 @@ document.addEventListener('DOMContentLoaded', function() {
       lightbox.style.display = 'none';
     }
   });
+
+  // Fecha ao apertar Esc
+  document.addEventListener('keydown', e => {
+    if (e.key === 'Escape' && lightbox.style.display === 'flex') {
+      lightbox.style.display = 'none';
+    }
+  });
   
   // Evento para validação em tempo real no campo de nome
   nameInput.addEventListener('input', function() {
