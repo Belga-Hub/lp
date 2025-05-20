@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Belga Hub | A revolução tecnológica para PMEs brasileiras</title>
+  <meta name="description" content="Belga Hub - Business Early Launch & Growth Accelerator. O marketplace de software que simplifica a tecnologia para PMEs brasileiras.">
+  <link rel="stylesheet" href="css/landing.css">
+  <link rel="icon" href="images/logo.ico">
+  <!-- Font Awesome para ícones -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <!-- Inter Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="container header-container">
+      <a href="index.html" class="header-brand">
+        <img src="images/logo1.png" alt="Belga Hub" class="header-logo">
+        <h1>Belga Hub</h1>
+      </a>
+      <div class="header-links">
+        <a href="sobre.html">Sobre</a>
+        <a href="mailto:contato@belgahub.com.br">contato@belgahub.com.br</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <h2>Democratizando tecnologia para PMEs</h2>
+        <p>Onde empresas encontram softwares e parceiros</p>
+        <a href="#participate" class="cta-button hero-cta">Quero Participar</a>
+        
+        <div class="hero-image">
+          <img src="images/mockup-placeholder.png" alt="Belga Hub Platform" class="mockup-image">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Como Funciona Section -->
+  <section class="how-it-works">
+    <div class="container">
+      <h2 class="section-title">Como Funciona</h2>
+      <p class="section-subtitle">Um ecossistema completo para a digitalização do seu negócio</p>
+      
+      <div class="steps-container">
+        <div class="step-card">
+          <div class="step-icon">
+            <i class="fas fa-search"></i>
+          </div>
+          <h3>Explore Soluções</h3>
+          <p>Descubra um ecossistema colaborativo de soluções tecnológicas para superar cada desafio do seu negócio</p>
+        </div>
+        
+        <div class="step-card">
+          <div class="step-icon">
+            <i class="fas fa-handshake"></i>
+          </div>
+          <h3>Conecte-se com Parceiros</h3>
+          <p>Acesse uma rede de consultores qualificados para revenda e implementação de soluções</p>
+        </div>
+        
+        <div class="step-card">
+          <div class="step-icon">
+            <i class="fas fa-chart-line"></i>
+          </div>
+          <h3>Expanda seu Negócio</h3>
+          <p>Monitore leads e vendas em tempo real e evolua continuamente com nosso suporte especializado</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Participate Section -->
+  <section id="participate" class="participate">
+    <div class="container">
+      <h2 class="section-title">Participe do Beta</h2>
+      <p class="section-subtitle">Seja um dos primeiros a transformar como PMEs adotam tecnologia</p>
+      
+      <div class="participate-container">
+        <div class="participate-info">
+          <div class="info-box">
+            <div class="info-icon">
+              <i class="fas fa-check-circle"></i>
+            </div>
+            <div class="info-content">
+              <h3>Acesso Prioritário</h3>
+              <p>Seja um dos primeiros a utilizar a plataforma e influencie o desenvolvimento recíproco das empresas brasileiras</p>
+            </div>
+          </div>
+          
+          <div class="info-box">
+            <div class="info-icon">
+              <i class="fas fa-star"></i>
+            </div>
+            <div class="info-content">
+              <h3>Benefícios Exclusivos</h3>
+              <p>Condições especiais de lançamento para early adopters</p>
+            </div>
+          </div>
+          
+          <div class="info-box">
+            <div class="info-icon">
+              <i class="fas fa-users"></i>
+            </div>
+            <div class="info-content">
+              <h3>Comunidade Pioneira</h3>
+              <p>Conecte-se com outros líderes inovadores no ecossistema</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="participate-form">
+          <form id="beta-signup-form">
+            <div class="form-group">
+              <label for="name">Nome e sobrenome</label>
+              <input type="text" id="name" name="name" required>
+              <span class="error-message" id="name-error"></span>
+            </div>
+            
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required>
+              <span class="error-message" id="email-error"></span>
+            </div>
+            
+            <div class="form-group">
+              <label for="company">Empresa</label>
+              <input type="text" id="company" name="company" required>
+              <span class="error-message" id="company-error"></span>
+            </div>
+            
+            <div class="form-group">
+              <label for="role">O perfil que melhor me descreve</label>
+              <select id="role" name="role" required>
+                <option value="" selected disabled>Selecione seu perfil</option>
+                <option value="client">Busco tecnologia para minha empresa</option>
+                <option value="developer">Desenvolvo ou vendo software</option>
+                <option value="partner">Sou consultor ou revendedor</option>
+              </select>
+              <span class="error-message" id="role-error"></span>
+            </div>
+            
+            <div class="form-group">
+              <label for="message">O que espera do Belga Hub?</label>
+              <textarea id="message" name="message" rows="3"></textarea>
+            </div>
+            
+            <button type="submit" class="submit-button" id="submit-button">
+              <span class="button-text">Reservar minha vaga</span>
+              <span class="button-loader" id="button-loader"></span>
+            </button>
+          </form>
+          
+          <div id="success-message" class="success-message hidden">
+            <i class="fas fa-check-circle"></i>
+            <h3>Inscrição realizada com sucesso!</h3>
+            <p>Obrigado pelo interesse! Em breve entraremos em contato.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer-no-margin">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-column">
+          <h3>Belga Hub</h3>
+          <div class="footer-links">
+            <a href="#">-</a>
+            <a href="#">-</a>
+            <a href="#">-</a>
+            <a href="sobre.html">Sobre nós</a>
+          </div>
+        </div>
+        <div class="footer-column">
+          <h3>Para Desenvolvedores</h3>
+          <div class="footer-links">
+            <a href="#">-</a>
+            <a href="#">-</a>
+            <a href="#">-</a>
+          </div>
+        </div>
+        <div class="footer-column">
+          <h3>Para Parceiros</h3>
+          <div class="footer-links">
+            <a href="#">-</a>
+            <a href="#">-</a>
+            <a href="#">-</a>
+          </div>
+        </div>
+        <div class="footer-column">
+          <h3>Contato</h3>
+          <div class="footer-links">
+            <a href="mailto:contato@belgahub.com.br">contato@belgahub.com.br</a>
+            <a href="tel:+5511986059310">(11) 98605-9310</a>
+            <a href="#">São Paulo, SP</a>
+            <div style="margin-top: 10px; display: flex; gap: 15px;">
+              <a href="https://www.linkedin.com/company/belga-hub/"><i class="fab fa-linkedin"></i></a>
+              <a href="https://www.instagram.com/belgahub/"><i class="fab fa-instagram"></i></a>
+              <a href="https://www.x.com/belgahub"><i class="fab fa-twitter"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Belga Co. Todos os direitos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/landing.js"></script>
+</body>
+</html>
