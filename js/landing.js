@@ -148,7 +148,7 @@ document.addEventListener('DOMContentLoaded', function() {
       };
       
       // Enviar dados para o Google Script
-      fetch('https://script.google.com/macros/s/YOUR_SCRIPT_ID/exec', {
+      fetch('https://script.google.com/macros/s/AKfycbwxwqqYK6CEojEVfzjZmK4heyVOpC64dGg55ygIw3FXGwn5DAtVUIB1Ey9q1x1BPramfA/exec', {
         method: 'POST',
         mode: 'no-cors',
         cache: 'no-cache',
