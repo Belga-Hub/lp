@@ -1,0 +1,6 @@
+# Bloquear apenas a área administrativa
+User-agent: *
+Disallow: /admin
+
+# Sitemap do site
+Sitemap: https://www.belgahub.com.br/sitemap.xml
